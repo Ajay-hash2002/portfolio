@@ -1,0 +1,43 @@
+PROGRAM 3 - GIT COMMANDS
+Run these in the VS Code terminal (Ctrl + `). Take a screenshot of each step for the lab file.
+
+0. One time setup (only if not done before)
+   git config --global user.name "Ajay"
+   git config --global user.email "your-email@example.com"
+
+1. Open the folder that has your HTML and CSS projects (use program2-portfolio)
+   cd program2-portfolio
+
+2. Initialize repository
+   git init
+
+3. Add files
+   git add .
+
+4. Commit
+   git commit -m "Initial commit"
+
+5. Make sure the branch is called main
+   git branch -M main
+
+6. Create development branch and switch to it
+   git checkout -b development
+
+7. Make a change (example: change the <title> in index.html or a color in style.css), then
+   git add .
+   git commit -m "Changed title and color"
+
+8. Go back to main and merge
+   git checkout main
+   git merge development
+
+9. Check history
+   git log --oneline
+
+10. Push to GitHub
+    - First create an empty repository on github.com (example name: portfolio)
+    - Then run:
+      git remote add origin https://github.com/YOUR-USERNAME/portfolio.git
+      git push -u origin main
+
+Useful commands: git status, git branch, git log

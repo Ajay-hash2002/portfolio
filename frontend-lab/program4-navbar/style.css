@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    color: white;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 8px;
+}
+
+.menu a:hover {
+    color: #f1c40f;
+}
+
+/* hamburger and checkbox are hidden on big screens */
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+main {
+    padding: 30px;
+}
+
+/* mobile view */
+@media (max-width: 700px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    /* when checkbox is checked, show the menu */
+    #menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+}

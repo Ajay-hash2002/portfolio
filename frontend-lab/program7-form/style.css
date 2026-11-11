@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+form {
+    width: 330px;
+    margin: 50px auto;
+    background-color: white;
+    border: 1px solid #888;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input {
+    width: 100%;
+    padding: 7px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+}
+
+button {
+    margin-top: 18px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+#success {
+    color: green;
+    font-weight: bold;
+}

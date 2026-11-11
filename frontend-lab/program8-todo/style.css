@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 350px;
+    margin: 50px auto;
+    background-color: white;
+    border: 1px solid #888;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+#taskForm {
+    display: flex;
+    gap: 5px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 7px;
+}
+
+button {
+    padding: 7px 12px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+}
+
+li span {
+    cursor: pointer;
+}
+
+/* completed task */
+li.done span {
+    text-decoration: line-through;
+    color: gray;
+}
